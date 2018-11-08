@@ -1,0 +1,18 @@
+Your design doc should be at least 200 words, and no more than 500
+words long. It should be a high-level description of algorithms/approaches that
+you have tried or plan to try. Additionally, you must include your reasoning
+for what led you to these approaches, and why you think they will work.
+
+
+PROBLEM:
+Formally, you’re given an undirected graph G = (V, E), an integer k, and
+an integer s, where each node in the graph denotes a student, and each edge
+(v1, v2) denotes that students v1 and v2 are friends. The integer k denotes the
+number of buses available and the integer s denotes the number of students that
+can fit on a single bus. Furthermore, you’re given a list L, where each element
+Lj is some subset of V which corresponds to a group that should be kept apart.
+You must return a partition of G – a set of sets of vertices Vi such that
+V1∪V2∪V3, ∪...∪Vk = V and ∀i 6= j, Vi∩Vj = ∅. Additionally, ∀i, 0 < |Vi
+| ≤ s.
+In other words, every bus must be non-empty, and must not have more students
+on it than its capacity allows.
